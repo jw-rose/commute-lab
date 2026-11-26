@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
+from app.routers import health, places
+
 app = FastAPI(title="CommuteLab API")
 
-
-@app.get("/api/health")
-def health():
-    return {"status": "ok"}
+app.include_router(health.router)
+app.include_router(places.router)
