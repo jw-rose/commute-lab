@@ -1,14 +1,7 @@
-import Header from './components/Header'
-import './App.css'
+import LandingPage from './routes/LandingPage'
 
 function App() {
-
-  return (
-    <>
-    <Header />
-      
-    </>
-  )
+    return <LandingPage />
 }
 
 export default App
