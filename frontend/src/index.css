@@ -22,6 +22,21 @@
   --color-muted: #44584f;
   --color-muted-soft: #5b6b64;
   --color-sun: #f5b83d;
+
+  /* Landing page tokens, ported from docs/design/landing-page.dc.html */
+  --color-surface-field: #f4f6f5;
+  --color-border: #e7ece9;
+  --color-border-strong: #cfe3dc;
+  --color-border-strong-2: #d5e4dd;
+  --color-nav-hover: #f0f5f2;
+
+  --radius-field: 14px;
+  --radius-card: 22px;
+  --radius-preview: 26px;
+  --radius-cta: 32px;
+
+  --shadow-card: 0 4px 20px rgba(26, 58, 46, 0.06);
+  --shadow-card-raised: 0 6px 28px rgba(26, 58, 46, 0.08);
 }
 
 @layer base {
@@ -36,5 +51,12 @@
   h3 {
     font-weight: 800;
     letter-spacing: -0.02em;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 3px solid var(--color-pine);
+    outline-offset: 2px;
   }
 }
